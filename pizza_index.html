@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>野草披薩</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/RWD.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<script type="text/javascript" src="Script/jquery-foundation-3.3.1.js"></script>
+
+
+</head>
+<!-- 手機導覽列 -->
+
+
+<button id="mobile-menu-btn">
+	<svg width="21" height="2.5"></svg>
+	<svg width="21" height="2.5"></svg>
+	<svg width="21" height="2.5"></svg>
+</button>
+
+<nav id="mobile-nav">
+	<a href="#" class="close-btn">&times;</a>
+	<div class="clearfix"></div>
+
+	<a href="#top" class="move mob-mainmenu-list">首頁</a>
+	<a href="#news" class="move mob-mainmenu-list">最新消息</a>
+	<a href="#yummy" class="move mob-mainmenu-list">美味秘訣</a>
+	
+	
+
+	<!-- 精選菜單 -->
+	<ul class="mob-mainmenu-list ">
+		<a href="#pizza" class="move mob-mainmenu-list-pizza">
+			精選菜單&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<span class="mob-more"> > </span>
+		</a>
+
+		<!-- 精選菜單submenu -->
+		<div class="mob-submenu-pizza">
+			<a href="#pizza_Margaret" class="mob-submenu-list move">瑪格莉特披薩</a>
+			<a href="#pizza_Octopus" class="mob-submenu-list move">和風章魚燒</a>
+			<a href="#pizza_seafood" class="mob-submenu-list move">海鮮</a>
+			<a href="#pizza_Korean" class="mob-submenu-list move">韓式泡菜燒肉</a>
+			<a href="#pizza_SeaGround" class="mob-submenu-list move">海陸大亨</a>
+			<a href="#pizza_Hawaii" class="mob-submenu-list move">夏威夷</a>
+		</div>
+	</ul>
+	<!-- 精選菜單 end-->
+
+	<a href="#booking" class="move mob-mainmenu-list">預先訂位</a>
+	<a href="#footer" class="move mob-mainmenu-list">聯絡我們</a>
+</nav>
+
+<!-- 手機導覽列外失焦 -->
+<div class="defocus"></div>
+
+<body>
+	<header id="top">
+		<div class="top-box"></div>
+
+		<!-- 導覽列 -->
+		<nav id="pc-nav">
+			<ul class="mainmenu">
+				<li class="mainmenu-list">
+					<a href="#top" class="move">首頁</a>
+				</li>
+				<li class="mainmenu-list">
+					<a href="#news" class="move">最新消息</a>
+				</li>
+				<li class="mainmenu-list mainmenu-list-yummy">
+					<a href="#">美味秘訣</a>
+					<ul class="submenu submenu-yummy">
+						<li class="submenu-list">
+							<a href="#yummy" class="move">道地食材</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#yummy" class="move">特製醬料</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#yummy" class="move">專業手工</a>
+						</li>
+					</ul>
+				</li>
+				<!-- logo -->
+				<li class="mainmenu-list logo-all move">
+					<a href="#" class="move">
+						<img src="img/logo2.png" alt="image" class="logo">
+					</a>
+				</li>
+				<!-- logo END -->
+				<li class="mainmenu-list mainmenu-list-pizza">
+					<a href="#pizza" class="move">&nbsp&nbsp精選菜單&nbsp&nbsp&nbsp</a>
+					<ul class="submenu submenu-pizza">
+						<li class="submenu-list">
+							<a href="#pizza_Margaret" class="move">瑪格莉特披薩</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#pizza_Octopus" class="move">和風章魚燒</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#pizza_seafood" class="move">海鮮</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#pizza_Korean" class="move">韓式泡菜燒肉</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#pizza_SeaGround" class="move">海陸大亨</a>
+						</li>
+						<li class="submenu-list">
+							<a href="#pizza_Hawaii" class="move">夏威夷</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mainmenu-list">
+					<a href="#booking" class="move">預先訂位</a>
+				</li>
+				<li class="mainmenu-list">
+					<a href="#footer" class="move">聯絡我們</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- mobile logo -->
+		<li class="mobile-logo">
+			<img src="img/logo2.png" alt="image" class="logo">
+		</li>
+		<!-- mobile logo END -->
+
+		<div class="banner">
+			<img src="img/banner/banner.png" alt="banner">
+		</div>
+	</header>
+
+	<main class="container">
+
+		<!--最新消息-->
+		<div class="news" id="news">
+			<div class="news-title">
+				<p>最新消息<br>
+					NEWS
+				</p>
+			</div>
+
+			<div class="news-content">
+
+				<a href="img/news/new1.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new1.jpg" class="news-img">
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new2.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new2.jpg" class="news-img">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new3.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new3.jpg" class="news-img">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new4.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new4.jpg" class="news-img">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new5.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new5.jpg" class="news-img">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new6.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new6.jpg" class="news-img">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<a href="img/news/new7.jpg" class="news-box" data-lightbox="news">
+					<img src="img/news/new7.jpg" class="news-img ">
+
+					<h3 class="date">2018.07.04</h3>
+					<p class="news-info">【特別優惠!買2送1!】</p>
+					<p class="more">more></p>
+				</a>
+
+				<div class="news-box disable"></div>
+			</div>
+		</div>
+
+		<!--美味秘訣-->
+		<div class="yummy" id="yummy">
+			<div class="yummy-title">美味秘訣</div>
+
+
+			<div class="yummy-content">
+
+				<div class="yummy-info">
+					<img src="img/yummy/yummy1_fin.png" alt="image">
+					<h3>台灣道地食材</h3>
+					<p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget
+						elit
+						facilisis tristique. Nam vel iaculis mauris.</p>
+				</div>
+
+				<div class="yummy-info">
+					<img src="img/yummy/yummy2_fin.png" alt="image">
+					<h3>特製醬料</h3>
+					<p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum
+						nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+				</div>
+
+				<div class="yummy-info">
+					<img src="img/yummy/yummy3_fin.png" alt="image">
+					<h3>專業主廚手工</h3>
+					<p>Fusce rhoncus porttitor velit, eu nibh bibendum aliquet vel. Fusce lorem leo, vehicula at nibh quis,
+						facilisis
+						accumsan turpis.</p>
+				</div>
+			</div>
+		</div>
+
+		<!--精選菜單-->
+		<div class="pizza" id="pizza">
+			<!--精選菜單標題-->
+			<div class="pizza-title">精選菜單</div>
+			<!--精選菜單標題end-->
+
+			<!-- 披薩菜單全部 -->
+			<div class="container pizza-content">
+				<!-- 第1行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_Margaret">
+					<div class="pizza-img col-sm-12 col-md-12 col-lg-4">
+						<img src="img/pizza/pizza1.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-sm-12 col-md-12 col-lg-6">
+						<p class="pizza-info-title">瑪格莉特披薩</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus et, numquam
+							placeat
+							id deleniti iusto atque officiis, consectetur quam fuga vitae ratione. Autem itaque veritatis maiores
+							aliquam
+							sunt eveniet? Sequi, placeat fugiat porro numquam ducimus dolorem aliquid soluta ab quae sed. Aliquam
+							assumenda,
+							nam veritatis, natus itaque doloremque culpa!</p>
+						<p class="price-RT">大&nbsp;$685&nbsp;&nbsp;小&nbsp;$485</p>
+					</div>
+				</div>
+
+				<!-- 第2行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_Octopus">
+					<div class="pizza-img col-lg-4 order-lg-2">
+						<img src="img/pizza/pizza2.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-lg-6 order-lg-1">
+						<p class="pizza-info-title">和風章魚燒</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur quas
+							eius
+							porro voluptates laboriosam neque nihil ea ab deserunt reprehenderit dolorum quibusdam, debitis itaque
+							fugit
+							quis expedita veniam, quasi praesentium necessitatibus nesciunt. Quisquam, tempore.</p>
+						<p class="price-LT">大&nbsp;$650&nbsp;&nbsp;小&nbsp;$450</p>
+					</div>
+				</div>
+
+				<!-- 第3行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_seafood">
+					<div class="pizza-img col-lg-4">
+						<img src="img/pizza/pizza3.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-lg-6">
+						<p class="pizza-info-title">海鮮</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit minus et, numquam
+							placeat
+							id deleniti iusto atque officiis, consectetur quam fuga vitae ratione. Autem itaque veritatis maiores
+							aliquam
+							sunt eveniet? Sequi, placeat fugiat porro numquam ducimus dolorem aliquid soluta ab quae sed. Aliquam
+							assumenda,
+							nam veritatis, natus itaque doloremque culpa!</p>
+						<p class="price-RT">大&nbsp;$670&nbsp;&nbsp;小&nbsp;$465</p>
+					</div>
+				</div>
+
+				<!-- 第4行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_Korean">
+					<div class="pizza-img col-lg-4 order-lg-2">
+						<img src="img/pizza/pizza4.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-lg-6 order-lg-1">
+						<p class="pizza-info-title">韓式泡菜燒肉</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur quas
+							eius
+							porro voluptates laboriosam neque nihil ea ab deserunt reprehenderit dolorum quibusdam, debitis itaque
+							fugit
+							quis expedita veniam, quasi praesentium necessitatibus nesciunt. Quisquam, tempore.</p>
+						<p class="price-LT">大&nbsp;$685&nbsp;&nbsp;小&nbsp;$485</p>
+					</div>
+				</div>
+
+				<!-- 第5行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_SeaGround">
+					<div class="pizza-img col-lg-4">
+						<img src="img/pizza/pizza5.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-lg-6">
+						<p class="pizza-info-title">海陸大亨</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem, nam quae
+							veritatis. Itaque iste veniam sequi nihil ipsa, nisi tempore corporis. Temporibus nihil id quis
+							reprehenderit,
+							reiciendis accusamus alias. Soluta quasi sunt quo exercitationem esse, eaque numquam eligendi? Iste
+							commodi,
+							rerum.</p>
+						<p class="price-RT">大&nbsp;$690&nbsp;&nbsp;小&nbsp;$495</p>
+					</div>
+				</div>
+
+				<!-- 第6行 -->
+				<div class="row justify-content-lg-center pizza-row" id="pizza_Hawaii">
+					<div class="pizza-img col-lg-4 order-lg-2">
+						<img src="img/pizza/pizza6.jpg" class="img-fluid">
+					</div>
+					<div class="pizza-info-content col-lg-6  order-lg-1">
+						<p class="pizza-info-title">夏威夷</p>
+						<p class="pizza-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur quas
+							eius
+							porro voluptates laboriosam neque nihil ea ab deserunt reprehenderit dolorum quibusdam, debitis itaque
+							fugit
+							quis expedita veniam, quasi praesentium necessitatibus nesciunt. Quisquam, tempore.</p>
+						<p class="price-LT">大&nbsp;$650&nbsp;&nbsp;小&nbsp;$450</p>
+					</div>
+				</div>
+			</div>
+			<!-- 披薩菜單全部end -->
+		</div>
+		<!--精選菜單end-->
+
+		<!--試算、訂位-->
+		<div class="container">
+
+			<div class="row ">
+
+				<!--試算-->
+				<div class="calc-all col-sm-12 col-md-10 col-lg-5" id="calc">
+
+					<!-- PC試算 -->
+					<div class="pc-calc">
+						<p class="calc-title">試算</p>
+						<label>
+							<b>瑪格莉特披薩</b>
+							&nbsp;&nbsp;大&nbsp;$685&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$485&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+
+						<br>
+
+						<label>
+							<b>和風章魚燒</b>
+
+							&nbsp;&nbsp;大&nbsp;$650&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$450&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+						</label>
+						<br>
+
+						<label>
+							<b>海鮮</b>
+							&nbsp;&nbsp;大&nbsp;$670&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$465&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>韓式泡菜燒肉</b>
+							&nbsp;&nbsp;大&nbsp;$685&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$485&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>海陸大亨</b>
+							&nbsp;&nbsp;大&nbsp;$690&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$495&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>夏威夷</b>
+							&nbsp;&nbsp;大&nbsp;$650&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$450&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+
+						<br>
+						<span class="total-all"><b>總計: $<span class="total">0</span></b></span>
+					</div>
+					<!-- PC試算 end -->
+
+					<!-- 手機試算 -->
+					<div class="mob-calc">
+						<p class="calc-title">試算</p>
+						<label>
+							<b>瑪格莉特披薩</b><br>
+							大&nbsp;$685&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$485&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+
+						<br>
+
+						<label>
+							<b>和風章魚燒</b><br>
+
+							大&nbsp;$650&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$450&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+						</label>
+						<br>
+
+						<label>
+							<b>海鮮</b><br>
+							大&nbsp;$670&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$465&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>韓式泡菜燒肉</b><br>
+							大&nbsp;$685&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$485&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>海陸大亨</b><br>
+							大&nbsp;$690&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$495&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+						<br>
+
+						<label>
+							<b>夏威夷</b><br>
+							大&nbsp;$650&nbsp;
+							<span class="calc-pizza" data-price="685">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+
+							&nbsp;&nbsp;小&nbsp;$450&nbsp;
+							<span class="calc-pizza" data-price="485">
+								<select name="quantity" class="quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<span class="amount"></span>
+							</span>
+						</label>
+
+						<br>
+						<span class="total-all"><b>總計: $<span class="total">0</span></b></span>
+					</div>
+					<!-- 手機試算 end -->
+
+				</div>
+				<!--試算end-->
+
+				<!--預先訂位-->
+				<div class="booking col-sm-12 col-md-10 col-lg-5" id="booking">
+
+					<p class="booking-title">預先訂位</p>
+
+					<form onsubmit="alert('確認送出')" class="booking-form">
+						<label for="date">日期</label><br>
+						<input type="date" id="date" required>
+						<!-- <span class="ok">✔</span><br> -->
+						<label for="people">人數</label><br>
+						<input type="number" id="people" min="1" max="10" placeholder="1~10人" required>
+						<label for="username">姓名</label><br>
+						<input type="text" id="username" required>
+						<label for="username">電話</label><br>
+						<input type="text" id="username" placeholder="0912345678" required pattern="[0-9]{8,10}">
+
+						<div class="form-button">
+							<button class="button">送出</button>
+							<button class="button">取消</button>
+						</div>
+					</form>
+				</div>
+				<!--預先訂位end-->
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+
+	</main>
+
+	<div class="map-all">
+		<div class="map-title">交通</div>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.5198169041093!2d121.51752899074759!3d25.03272899816291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99ec7aac151%3A0x2bc793baee257c41!2z5Lit5q2j57SA5b-15aCC56uZ!5e0!3m2!1szh-TW!2stw!4v1535359517883"
+			id="map" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<!-- <div id="map"></div> -->
+		<!-- <img src="img/map/map.jpg" alt="map" class="map-img"> -->
+	</div>
+
+
+	<!--聯絡我們footer-->
+	<div class="footer-all" id="footer">
+		<div class="container">
+			<div class="row footer-content">
+				<div class="footer-msg-all col-sm-12 col-md-10 col-lg-8">
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<img src="img/footer_logo2.png" alt="image" class=" img-fluid">
+					</div>
+					<!-- footer logo end -->
+					<!-- footer資訊 -->
+
+					<p class="footer-msg">
+						<span>台北市中正區羅斯福路一段</span><br>
+						<span>(02)2345-6789</span><br>
+                        <span>營業時間：11:30&nbsp;-&nbsp;23:00&nbsp;</span><span>(最後餐點至21:30)</span><br>
+                        <span style="font-size: 12px;"><strong><I>個人練習用，無商業用途</I></strong></span>
+					</p>
+
+					<!-- footer資訊 end -->
+				</div>
+
+
+				<!-- 聯絡圖示 -->
+				<div class="col-sm-12 col-md-2 col-lg-4">
+					<div class="footer-icon">
+						<a href="#">
+							<img src="img/footer/facebook_fin.png" alt="facebook">
+							<img src="img/footer/instagram_fin.png" alt="facebook">
+							<img src="img/footer/line_fin.png" alt="facebook">
+							<img src="img/footer/group_fin.png" alt="facebook">
+						</a>
+					</div>
+					<!-- 聯絡圖示end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--聯絡我們footer end-->
+
+	<div id="gotop">
+		<img src="img/gotop.png">
+	</div>
+
+
+	<!-- 地圖API -->
+	<!-- <script>
+			function initMap() {
+		        var myLatLng = {lat: 25.032873, lng: 121.518271};
+
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          center: myLatLng,
+		          zoom: 8
+		        });
+
+		        var marker = new google.maps.Marker({
+		          map: map,
+		          position: myLatLng,
+		          title: '野草披薩'
+		        });
+		      }
+
+
+	    </script> -->
+
+	<script type="text/javascript" src="Script/all.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2j117tLg9AnDt-Vwu7USp2PeZi9NxtE&callback=initMap"
+		type="text/javascript"></script>
+	<!-- 地圖API END-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+
+	<script src="Script/lightbox.js"></script>
+
+</body>
+
+
+
+</html>

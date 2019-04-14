@@ -1,0 +1,733 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    
+}
+
+.defocus {
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 997;
+}
+
+body {
+	display: none;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/all_bg2_fin.jpg");
+	/*background-color: #FFFFFF;*/
+	font-family: 微軟正黑體;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+.container {
+	/*display: table;*/
+	width: 100%;
+}
+
+span {
+	display: inline-block;
+}
+
+.top-box {
+	background-color: #F0C152;
+	height: 10px;
+
+}
+
+/*banner*/
+header {
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+
+.logo-all {
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: -95px;
+}
+
+.logo {
+	width: 200px;
+}
+
+
+
+/**導覽列**/
+
+a {
+	color: #4e6157;
+	text-decoration: none;
+}
+
+a:visited {
+
+	color: #4e6157;
+}
+
+a:hover {
+	color: #C46B00;
+	text-decoration: none;
+}
+
+/*手機導覽列*/
+.mobile-logo {
+	display: none;
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+#mobile-menu-btn {
+	display: none;
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid #AC5500;
+	border-radius: 10px;
+	line-height: 3px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	position: fixed;
+	z-index: 998;
+}
+
+#mobile-menu-btn svg {
+	background-color: #A94D00;
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: 3px;
+	
+}
+
+#mobile-nav {
+	width: 0;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	background-color: #F8F8F8;
+	/*opacity: 0.5;*/
+	z-index: 999;
+	overflow-x: hidden;
+	/*box-shadow: 10px 0px 100px rgba(0,0,0,0.4);*/
+}
+
+.close-btn {
+	float: right;
+	margin: 0 20px;
+	font-size: 40px;
+}
+
+
+
+.mob-mainmenu-list {
+	display: block;
+	font-weight: bold;
+	padding: 10px 0 10px 30px;
+	margin: 0;
+	border-bottom: 1px solid #B6B6B6;
+	white-space: nowrap;
+}
+
+.mob-submenu-pizza {
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+.mob-more {
+	margin: 0 !important; 
+	transform: rotate(0deg);
+}
+
+.more-rotate {
+	transform: rotate(90deg)
+}
+
+.mob-submenu-list {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0 10px 40px;
+	text-align: left;
+	border-top: 1px solid #B6B6B6;
+
+}
+
+
+
+
+/*pc導覽列*/
+#pc-nav {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+	position: relative;
+	top: 100px;
+	text-align: center;
+}
+
+.mainmenu {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 150px;
+	list-style-type: none; 
+	text-align: center;
+}
+
+.mainmenu-list {
+	color: #4e6157;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.mainmenu-list-pizza {
+	padding: 0;
+}
+
+.submenu {
+	padding: 0;
+	margin: 10px 0;
+	z-index: 999;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.submenu-pizza-all {
+	margin: 0 auto;
+	width: 400px;
+	position: relative;
+	top: -115px;
+	left: 140px;
+}
+
+.submenu-yummy-all {
+	margin: 0 auto;
+	width: 400px;
+	position: relative;
+	top: -115px;
+	right: 172px;
+}
+
+
+.submenu-list {
+	font-size: 14px;
+	line-height: 25px;
+	margin: 0;
+	color: #4e6157;
+}
+
+.submenu-list a:visited {
+	color: #70452D;
+}
+
+.submenu-list a:hover {
+	color: #C46B00;
+}
+
+.banner {
+	width: 60%;
+	margin: 50px auto 30px auto;
+}
+
+.banner img {
+	width: 100%;
+}
+
+/**最新消息**/
+.news {
+	width: 100%;
+	margin: 0 auto 30px auto;
+	padding: 0;
+	text-align: center;
+}
+
+.news-title {
+	text-align: center;
+	color: #4e6157;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 auto;	
+}
+
+
+.news-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 15px auto 0 auto;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.news-box {
+	flex: 20%;
+	background-color: white;
+	box-shadow: 0px 0px 5px rgb(76, 42, 42, 0.5);
+	padding: 10px;
+	margin: 15px 15px 0 15px;
+	vertical-align: top;
+}
+
+.news-box:hover {
+	box-shadow: 0px 0px 15px rgb(76, 42, 42, 0.5);
+}
+
+
+.news-img {
+	width: 100%;
+	margin: 0;
+}
+
+.disable {
+	opacity: 0;
+}
+
+.date {
+	text-align: left;
+	font-size: 14px;
+	margin: 5px 0;
+	color: #cc3b3b;
+}
+
+
+.news-info {
+	text-align: left;
+	margin-top: 10px;
+	font-size: 16px;
+	color: gray;
+}
+
+.more {
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 8px;
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/**美味秘訣**/
+.yummy {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.yummy-title {
+	margin: 0;
+	text-align: center;
+	color: #4e6157;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.yummy-content {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.yummy-info {
+	/*flex: 1 0 35%;*/
+	width: 35%;
+	padding: 0 20px;
+	margin: 20px 20px;
+	color: #3b0007;
+}
+
+/*@media (max-width: 575.98px) {
+	.yummy-content {
+		flex-wrap: wrap;
+	}
+	
+	.yummy-info {
+		flex: 1 0 50%;
+	}
+
+}*/
+
+.yummy-info img {
+	width: 65%;
+	/*height: 200px;*/
+}
+
+.yummy-info h3 {
+	margin: 30px 0 10px 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.yummy-info p {
+	text-align: left;
+	margin: 0;
+}
+
+
+
+/**精選菜單**/
+.pizza {
+	text-align: center;
+	margin: 30px auto 30px auto;
+	width: 100%; 
+}
+
+
+.pizza-title {
+	text-align: center;
+	color: #4e6157;
+	margin: 0px;
+	padding: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.pizza-content {
+	width: 100%;
+	padding: 0;
+	margin: 40px auto;
+}
+
+.pizza-row {
+	margin: 50px auto;
+}
+
+.pizza-img img {
+	margin: 0;
+	box-shadow: 3px 3px 5px rgb(139, 139, 139, 0.5);
+}
+
+
+.pizza-info-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+}
+
+
+.pizza-info-title {
+	flex: 1 1 100%;
+	text-align: left;
+	align-self: flex-start;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3b0007;
+	padding: 0 20px 20px 20px;
+	margin: 0;
+}
+
+
+
+.pizza-info {
+	flex: 1 1 100%;
+	color: gray;
+	padding: 0 20px 20px 20px;
+	margin: 0;
+	text-align: left;
+}
+
+
+
+.price-RT {
+	flex: 1 1 100%;
+	text-align: right;
+	margin: 20px;
+	padding: 0;
+	color: #cc3b3b;
+	font-size: 1.3em;
+	font-weight: bold;
+	align-self: flex-end;
+}
+
+.price-LT {
+	flex: 1 1 100%;
+	text-align: left;
+	margin: 0 20px;
+	padding: 0;
+	color: #cc3b3b;
+	font-size: 1.3em;
+	font-weight: bold;
+	align-self: flex-end;
+}
+
+
+/*試算*/
+#calc {
+	width: 100%;
+	margin: 0 auto 30px auto;
+}
+
+.calc-title {
+	color: #4e6157;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#calc label {
+	width: 100%;
+	background-color: rgb(255,255,255,0.5);
+	padding: 8px 15px;
+	margin: 5px 0;
+	border-radius: 12px;
+	border: 1px solid #FFBB3E;
+	/*font-weight: bold;*/
+	color: #C46B00;
+	line-height: 35px;
+}
+
+
+
+#calc select {
+	cursor: pointer;
+}
+
+.pc-calc {
+	display: block;
+}
+
+.mob-calc {
+	display: none;
+}
+
+.total-all {
+	background-color: rgb(255,255,255,0.5);
+	padding: 10px 15px;
+	margin: 5px 0;
+	border-radius: 12px;
+	border: 1px solid #FFBB3E;
+	float: right;
+	color: #cc3b3b;
+}
+
+
+/**預先訂位**/
+#booking {
+	width: 100%;
+	/*padding: 0 30px;*/
+	margin: 0 auto;
+}
+
+.booking-title {
+	color: #4e6157;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.booking-form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.booking-form label::before {
+	content: '●';
+	color: #FF8C2C;
+	font-size: 8px;
+	position: relative;
+	top: -10px;
+	margin: 0 5px;
+
+}
+
+.booking-form label {
+	margin: 0;
+}
+
+
+
+.booking-form input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #B9B9B9;
+	margin: 8px 0;
+	padding: 3px 10px;
+}
+
+.booking-form input:valid {
+	background-image: url("../img/booking/tick.png");
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: 95%;
+	background-size: 20px 20px;
+	border: 1px solid #23B300;
+	z-index: 995;
+}
+
+/*.booking-form input:invalid:focus {
+	border: 1px solid #FF0000;
+}*/
+
+
+.form-button {
+	margin: 20px 0;
+	padding: 0;
+	text-align: right;
+	/*position: relative;
+	right: 30px;*/
+}
+
+.button {
+	background-color: #ffaa23;
+	padding: 3px 5px;
+	text-decoration: none;
+	border: 2px solid #ffaa23;
+	border-radius: 8px;
+	color: white;
+	margin: 0 5px;
+	width: 70px;
+	cursor: pointer;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/**地圖**/
+.map-all {
+	width: 100%;
+	height: 80%;
+	margin: 0 auto 120px auto;
+}
+
+
+.map-title {
+	text-align: center;
+	color: #4e6157;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/*.map-img {
+	width: 400px;
+	margin-top: 30px;
+	box-shadow: 5px 5px 5px rgb(91, 58, 39, 0.3);
+}*/
+
+#map {
+	height: 100%;
+}
+
+
+/*捲到最上面*/
+#gotop {
+	/* display: none; */
+	width: 40px;
+	height: 40px;
+	background-color: #FFB700;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* text-align: center;
+	vertical-align: middle; */
+	cursor: pointer;
+	opacity: 0.4;
+	transition: opacity;
+	border-radius: 10px;
+}
+
+.gotop-opacity {
+	opacity: 1;
+}
+
+#gotop img {
+	width: 20;
+	height: 20px;
+	/* margin: 10px; */
+}
+
+
+
+/**footer**/
+#footer {
+	width: 100%;
+	background-color: #4e6157;
+	margin: 0;
+	padding: 20px;
+	box-shadow: 0px 0px 5px rgb(79, 41, 20, 0.5);
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	margin: 0;
+}
+
+.footer-msg-all {
+	display: flex;
+	justify-content: center;
+	/*flex-wrap: wrap;*/ 
+	align-items: flex-end;
+	margin: 0 auto;
+}
+
+.footer-logo {
+	width: 250px;
+	margin: 0;
+}
+
+
+.footer-msg {
+	width: 100%;
+	margin: 0 40px;
+	padding: 0;
+	line-height: 25px;
+	color: white;
+	font-size: 15px;
+}
+
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 10px 0 0 0;
+	text-align: right;
+}
+
+.footer-icon a {
+	width: 100%;
+	padding: 0;
+	margin: 5px 5px 0 5px;
+}
+
+.footer-icon img {
+	width: 15%;
+	padding: 0;
+	margin: 5px;
+}
+
